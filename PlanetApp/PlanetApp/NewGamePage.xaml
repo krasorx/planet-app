@@ -2,23 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlanetApp.NewGamePage"
-             Title="NEW GAME" >
+             Title="NEW GAME" 
+             BackgroundImage="fondo.png">
+    
     <ContentPage.Content>
-        <StackLayout Margin="0,0,0,0" BackgroundColor="DarkViolet">
+        <StackLayout Margin="0,0,0,0" BackgroundColor="Transparent">
 
-
+            
             <StackLayout VerticalOptions="CenterAndExpand" Padding="40,10,40,10" >
 
                 <Label Text="MODE" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
 
                 <Button Text="SINGLEPLAYER" FontSize="Large" TextColor="Black" 
-                    BorderColor="AliceBlue" BorderWidth="1" 
-                    x:Name="singlePlayer">
+                    BorderColor="AliceBlue" BorderWidth="1" BackgroundColor="#733F7FBF" 
+                    x:Name="singlePlayer" BorderRadius="50">
 
                 </Button>
 
                 <Button Text="MULTIPLAYER" FontSize="Large" TextColor="Black" 
-                    BorderColor="AliceBlue" BorderWidth="1" x:Name="multiPlayer">
+                    BorderColor="AliceBlue" BorderWidth="1" BackgroundColor="#733F7FBF"
+                        x:Name="multiPlayer" BorderRadius="50">
 
                 </Button>
 
@@ -26,12 +29,12 @@
                 
                 <Button Text="PLANET" FontSize="Large" TextColor="Black" 
                     BorderColor="AliceBlue" BorderWidth="1" x:Name="help"
-                    Margin="0,50,0,0">
+                    Margin="0,50,0,0" BackgroundColor="#733F7FBF" BorderRadius="50">
                 </Button>
                 
                 <Button Text="STAR" FontSize="Large" TextColor="Black" 
                     BorderColor="AliceBlue" BorderWidth="1" 
-                    x:Name="newGame" >
+                    x:Name="newGame" BackgroundColor="#733F7FBF" BorderRadius="50">
 
                 </Button>
             </StackLayout>

@@ -2,15 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlanetApp.LoadGamePage"
-             Title="LOAD GAME">
+             Title="LOAD GAME"
+             BackgroundImage="fondo.png">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Margin="0,0,0,0" BackgroundColor="DarkViolet">
+            <StackLayout Margin="0,0,0,0" BackgroundColor="Transparent">
 
         
                 <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" Margin="30,60,30,30">
                     <Button Text="MY PLANETS" FontSize="Large" TextColor="Black" 
-                        BorderColor="AliceBlue" BorderWidth="1"
+                        BorderColor="AliceBlue" BorderWidth="1" BackgroundColor="#733F7FBF" BorderRadius="50"
                         x:Name="MyPlanets" Clicked="MyPlanets_Clicked">
                     
                     </Button>
@@ -42,8 +43,9 @@
                     </Grid>
                     
                     <Button Text="EXAMPLES" FontSize="Large" TextColor="Black" 
-                        BorderColor="AliceBlue" BorderWidth="1"
-                        x:Name="Examples" Clicked="Examples_Clicked">
+                            BorderColor="AliceBlue" BorderWidth="1"
+                            x:Name="Examples" Clicked="Examples_Clicked"
+                            BackgroundColor="#733F7FBF" BorderRadius="50">
                     </Button>
 
                     <Grid x:Name="ExamplesCollection" IsVisible="False">
@@ -74,8 +76,9 @@
                     </Grid>
 
                     <Button Text="MY SYSTEMS" FontSize="Large" TextColor="Black" 
-                        BorderColor="AliceBlue" BorderWidth="1"
-                        x:Name="MySystems" Clicked="MySystems_Clicked">
+                            BorderColor="AliceBlue" BorderWidth="1"
+                            x:Name="MySystems" Clicked="MySystems_Clicked"
+                            BackgroundColor="#733F7FBF" BorderRadius="50">
                     </Button>
 
                     <Grid x:Name="SystemsCollection" IsVisible="False">

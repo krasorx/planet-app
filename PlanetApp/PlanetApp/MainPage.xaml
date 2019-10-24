@@ -3,26 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PlanetApp"
              x:Class="PlanetApp.MainPage"
-             Title="HOME" >
+             Title="HOME" 
+             BackgroundImage="fondo.png">
 
-    <StackLayout Margin="0,0,0,0" BackgroundColor="DarkViolet">
+    <StackLayout Margin="0,0,0,0" BackgroundColor="Transparent">
 
 
         <StackLayout VerticalOptions="CenterAndExpand" Padding="40,10,40,10" >
             <Button Text="NEW GAME" FontSize="Large" TextColor="Black" 
                     BorderColor="AliceBlue" BorderWidth="1"
-                    x:Name="NewGame" Clicked="NewGame_OnClicked">
+                    x:Name="NewGame" Clicked="NewGame_OnClicked"
+                    BackgroundColor="#733F7FBF" BorderRadius="50">
             
             </Button>
 
             <Button Text="LOAD GAME" FontSize="Large" TextColor="Black" 
                     BorderColor="AliceBlue" BorderWidth="1"
-                    x:Name="LoadGame" Clicked="LoadGame_Clicked">
+                    x:Name="LoadGame" Clicked="LoadGame_Clicked"
+                    BackgroundColor="#733F7FBF" BorderRadius="50">
             </Button>
 
             <Button Text="HELP" FontSize="Large" TextColor="Black" 
                     BorderColor="AliceBlue" BorderWidth="1" x:Name="help"
-                    Margin="0,50,0,-50">
+                    Margin="0,50,0,-50"
+                    BackgroundColor="#733F7FBF" BorderRadius="50">
             </Button>
         </StackLayout>
 
