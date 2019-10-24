@@ -13,5 +13,20 @@ namespace PlanetApp
         {
             InitializeComponent();
         }
+
+        private async void NewGame_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewGamePage());
+        }
+
+        private async void LoadGame_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoadGamePage());
+        }
+
+        private void LoadGame_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
