@@ -4,27 +4,110 @@
              x:Class="PlanetApp.LoadGamePage"
              Title="LOAD GAME">
     <ContentPage.Content>
-        <StackLayout Margin="0,0,0,0" BackgroundColor="DarkViolet">
+        <ScrollView>
+            <StackLayout Margin="0,0,0,0" BackgroundColor="DarkViolet">
 
-
-            <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" Margin="30,60,30,30">
-                <Button Text="MY PLANETS" FontSize="Large" TextColor="Black" 
-                    BorderColor="AliceBlue" BorderWidth="1"
-                    x:Name="MyPlanets" Clicked="MyPlanets_Clicked">
+        
+                <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" Margin="30,60,30,30">
+                    <Button Text="MY PLANETS" FontSize="Large" TextColor="Black" 
+                        BorderColor="AliceBlue" BorderWidth="1"
+                        x:Name="MyPlanets" Clicked="MyPlanets_Clicked">
                     
-                </Button>
-    
-                <Button Text="EXAMPLES" FontSize="Large" TextColor="Black" 
-                    BorderColor="AliceBlue" BorderWidth="1"
-                    x:Name="Examples" Clicked="Examples_Clicked">
-                </Button>
+                    </Button>
+                    <Grid x:Name="PlanetCollection" IsVisible="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    
+                        <?Contenido de los grid?>
 
-                <Button Text="MY SYSTEMS" FontSize="Large" TextColor="Black" 
-                    BorderColor="AliceBlue" BorderWidth="1"
-                    x:Name="MySystems" Clicked="MySystems_Clicked">
-                </Button>
+                        <BoxView Color="CornflowerBlue"
+                                 WidthRequest="160"
+                                 HeightRequest="160"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="0"
+                                 Grid.Column="0"/>
+                        <BoxView Color="CornflowerBlue"
+                                 WidthRequest="160"
+                                 HeightRequest="160"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                    </Grid>
+                    
+                    <Button Text="EXAMPLES" FontSize="Large" TextColor="Black" 
+                        BorderColor="AliceBlue" BorderWidth="1"
+                        x:Name="Examples" Clicked="Examples_Clicked">
+                    </Button>
+
+                    <Grid x:Name="ExamplesCollection" IsVisible="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <?Contenido de los grid?>
+
+                        <BoxView Color="MistyRose"
+                                 WidthRequest="160"
+                                 HeightRequest="160"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="0"
+                                 Grid.Column="0"/>
+                        <BoxView Color="MistyRose"
+                                 WidthRequest="160"
+                                 HeightRequest="160"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                    </Grid>
+
+                    <Button Text="MY SYSTEMS" FontSize="Large" TextColor="Black" 
+                        BorderColor="AliceBlue" BorderWidth="1"
+                        x:Name="MySystems" Clicked="MySystems_Clicked">
+                    </Button>
+
+                    <Grid x:Name="SystemsCollection" IsVisible="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <?Contenido de los grid?>
+
+                        <BoxView Color="DarkGreen"
+                                 WidthRequest="160"
+                                 HeightRequest="160"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="0"
+                                 Grid.Column="0"/>
+                        <BoxView Color="DarkGreen"
+                                 WidthRequest="160"
+                                 HeightRequest="160"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                    </Grid>
+
+                </StackLayout>
+
             </StackLayout>
-
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

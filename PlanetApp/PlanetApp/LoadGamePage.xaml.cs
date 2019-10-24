@@ -19,17 +19,17 @@ namespace PlanetApp
 
         private void MyPlanets_Clicked(object sender, EventArgs e)
         {
-
+            PlanetCollection.IsVisible = !PlanetCollection.IsVisible;
         }
 
         private void Examples_Clicked(object sender, EventArgs e)
         {
-
+            ExamplesCollection.IsVisible = !ExamplesCollection.IsVisible;
         }
 
         private void MySystems_Clicked(object sender, EventArgs e)
         {
-
+            SystemsCollection.IsVisible = !SystemsCollection.IsVisible;
         }
     }
 }
