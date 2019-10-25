@@ -10,16 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace PlanetApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class NewGamePage : ContentPage
+	public partial class LoadPlanetPage : ContentPage
 	{
-		public NewGamePage ()
+		public LoadPlanetPage ()
 		{
 			InitializeComponent ();
-		}
 
-        private async void PlanetBtn_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new PlanetScanPage());
-        }
-    }
+
+		}
+	}
 }

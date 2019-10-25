@@ -28,7 +28,7 @@
                 <Label Text="BODY TYPE" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
                 
                 <Button Text="PLANET" FontSize="Large" TextColor="Black" 
-                    BorderColor="AliceBlue" BorderWidth="1" x:Name="help"
+                    BorderColor="AliceBlue" BorderWidth="1" x:Name="PlanetBtn" Clicked="PlanetBtn_Clicked"
                     Margin="0,50,0,0" BackgroundColor="#733F7FBF" BorderRadius="50">
                 </Button>
                 

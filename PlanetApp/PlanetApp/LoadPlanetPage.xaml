@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanetApp.LoadPlanetPage"
+             Title="LOAD"
+             BackgroundImage="fondo.png">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#648EC7BA">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Image="" Grid.Row="0" Grid.Column="0" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue" />
+                <Button Grid.Row="0" Grid.Column="1" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue"/>
+                <Button Text="Bottom Left" Grid.Row="1" Grid.Column="0" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue"/>
+                <Button Text="Bottom Right" Grid.Row="1" Grid.Column="1" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
