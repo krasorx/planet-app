@@ -25,7 +25,7 @@
 
                 </Button>
 
-                <Label Text="BODY TYPE" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
+                <Label Text="BODY TYPE" FontSize="Large" HorizontalOptions="Center" TextColor="White" Margin="0,40,0,0"/>
                 
                 <Button Text="PLANET" FontSize="Large" TextColor="Black" 
                     BorderColor="AliceBlue" BorderWidth="1" x:Name="PlanetBtn" Clicked="PlanetBtn_Clicked"

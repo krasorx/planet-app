@@ -5,26 +5,28 @@
              Title="LOAD"
              BackgroundImage="fondo.png">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#648EC7BA">
-            <Grid>
+        <ScrollView BackgroundColor="#648EC7BA" Margin="10,10,10,10">
+            <Grid ColumnSpacing="0" RowSpacing="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Image="" Grid.Row="0" Grid.Column="0" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue" />
-                <Button Grid.Row="0" Grid.Column="1" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue"/>
-                <Button Text="Bottom Left" Grid.Row="1" Grid.Column="0" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue"/>
-                <Button Text="Bottom Right" Grid.Row="1" Grid.Column="1" BorderWidth="5" BorderRadius="50" BorderColor="AliceBlue"/>
+                <Button Image="Planeta_001" Scale="1" Grid.Row="0" Grid.Column="0" BorderWidth="1"  BorderColor="Black" BackgroundColor="#2E121111"/>
+                <Button Image="Planeta_002" Scale="1" Grid.Row="0" Grid.Column="1" BorderWidth="1"  BorderColor="Black" BackgroundColor="#2E121111"/>
+                <Button Image="Planeta_003" Scale="0.5" Grid.Row="1" Grid.Column="0" BorderWidth="1"  BorderColor="Black" BackgroundColor="#2E121111"/>
+                <Button Image="Planeta_004" Scale="0.5" Grid.Row="1" Grid.Column="1" BorderWidth="1"  BorderColor="Black" BackgroundColor="#2E121111"/>
+                <Button Image="Planeta_001" Scale="0.5" Grid.Row="2" Grid.Column="0" BorderWidth="1"  BorderColor="Black" BackgroundColor="#2E121111"/>
+                <Button Image="Planeta_003" Scale="0.5" Grid.Row="2" Grid.Column="1" BorderWidth="1"  BorderColor="Black" BackgroundColor="#2E121111"/>
             </Grid>
 
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
